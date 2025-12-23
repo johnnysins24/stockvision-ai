@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+pytrends
+pandas
+prophet
+requests
+beautifulsoup4
+python-multipart
+cors
