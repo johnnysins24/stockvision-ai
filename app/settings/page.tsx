@@ -144,7 +144,9 @@ export default function SettingsPage() {
                         <div className="flex items-center justify-between p-4 bg-card/50 rounded-lg border border-border/50">
                             <div>
                                 <p className="font-medium">Backend Server</p>
-                                <p className="text-sm text-muted-foreground">http://127.0.0.1:8001</p>
+                                <p className="text-sm text-muted-foreground">
+                                    {process.env.NEXT_PUBLIC_API_URL || "http://127.0.0.1:8001"}
+                                </p>
                             </div>
                             <div className="flex items-center gap-3">
                                 {apiStatus === "online" ? (
